@@ -88,8 +88,7 @@ router.post("/login", (req, res) => {
         const isMatch = await bcrypt.compare(password, results[0].password);
         if (!isMatch) return res.status(401).json({ message: "Invalid credentials" });
 
-        const token = jwt.sign({ id: results[0].id }, process.env.JWT_SECRET, { expiresIn: "1h" });
-        res.json({ token });
+               res.status(201).json({ message: "User logged-in successfully" });
     });
 });
 
