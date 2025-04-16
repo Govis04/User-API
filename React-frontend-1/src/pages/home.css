@@ -1,0 +1,24 @@
+.body {
+ 
+   position: relative;
+  
+    margin: 20px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.super-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+/* Super shadow effect */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    gap: 20px;
+    
+    
+}
